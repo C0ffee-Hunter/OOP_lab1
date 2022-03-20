@@ -27,4 +27,5 @@ fun main() {
     }
     println("The oldest book: $maxYearOfIssue, the newest book: $minYearOfIssue")
     println("The shortest book name: $shortNameBook, the longest book name $longNameBook")
+    println("Hello world")
 }
