@@ -20,7 +20,7 @@ fun parsebook(Books: String) : ArrayList<Book>
         else if(!isPoint && Books[i] == '\n')
         {
             isPoint = true
-            i ++
+            i++
             continue
         }
         else if(isPoint) { i++; continue }
@@ -33,7 +33,7 @@ fun parsebook(Books: String) : ArrayList<Book>
         yearOfIssue = if(Books.indexOf('\n',i) != -1) Books.substring(i,Books.indexOf('\n',i))
         else Books.substring(i)
         i += yearOfIssue.length
-        yearOfIssue = yearOfIssue.substring(yearOfIssue.indexOf('/') + 1)
+        yearOfIssue = yearOfIssue.substring(yearOfIssue.indexOf('/') + 1 )
         bookslist.add(Book(bookName,author,yearOfIssue))
     }
     return bookslist
