@@ -20,7 +20,7 @@ fun parsebook(Books: String) : ArrayList<Book>
         else if(!isPoint && Books[i] == '\n')
         {
             isPoint = true
-            i ++
+            i++
             continue
         }
         else if(isPoint) { i++; continue }
